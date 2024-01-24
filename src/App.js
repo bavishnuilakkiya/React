@@ -1,22 +1,44 @@
-
 import './App.css';
-import LifeCycleA from './class_component/LifeCycleA';
-import { Routes, Route} from "react-router-dom"
-
-import Home from "./component/Home/Home"
-import ListingApi from './component/Listing/ListingApi';
-import Details from './component/Detail/Details'
+import { Product } from './Product';
+import { Welcome } from './Welcome';
+import json from './data.json'
 
 function App() {
+  let name = "Bavishnu"
+
+  let productList = json
+  console.log(productList)
+
+
   return (
-    <div className="App">
-      
-        <Route exact path="/" component={Home }/>
-        <Route path="/listing/:mealId" component={ListingApi } />
-        <Route path="/details" component={Details } />
-      
+    <div class="product-data">
+     {/* <Welcome nm={name}/> */}
+     {/* <Product />  */}
+
+     {productList.map((item) => {
+        return (
+        <Productlist product = {item} />)
+     })
+    }
     </div>
   );
+
+  }
+
+function Productlist ({product}) {
+
+  return (
+    <div className="card">
+     <img src={product.image} alt={product.name} />
+     <div>
+       <h4> {product.name}</h4>
+       <p>{product.description}</p>
+       <h4>{product.cost}</h4>
+     </div>
+    </div>
+  )
+
 }
 
 export default App;
+
