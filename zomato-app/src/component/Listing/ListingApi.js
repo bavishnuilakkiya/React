@@ -55,6 +55,7 @@ export default class ListingApi extends Component{
 
         let mealId = this.props.match.params.mealId
 
+        sessionStorage.setItem("mealId",  this.props.match.params.mealId      )
         console.log('restaurant url in listing',`${rurl}${mealId}`)
 
         fetch(`${rurl}${mealId}`, {method: "GET"})

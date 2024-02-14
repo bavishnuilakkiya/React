@@ -1,6 +1,7 @@
 
 import React, {Component} from 'react'
 import './Search.css'
+import { Link } from 'react-router-dom'
 
 const lurl = "http://localhost:8000/zomato/locations"
 
@@ -55,10 +56,10 @@ export default class Search extends Component{
             <h2 className="app-name"> Zomato</h2>
             <ul className="nav justify-content-end">
             <li className="nav-item">
-                <button className="btn btn-default login">Login</button>
+                <button className="btn btn-default login"><Link to="/login">Login</Link></button>
             </li>
             <li className="nav-item">
-                <button className="signup btn btn-default">Create an account</button>
+                <button className="signup btn btn-default"><Link to="/register">Create an account</Link></button>
             </li>
             </ul>
             <div className="row text-center">
