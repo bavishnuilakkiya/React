@@ -1,0 +1,24 @@
+
+.container-footer{
+    display:flex;
+    flex-flow: column nowrap;
+    border-block: 5px solid lightgrey;
+}
+
+h2.Footer-text{
+    text-align:center;
+}
+
+.footer-details{
+    display:flex;
+    align-items: stretch;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.sub-sec{
+    display:flex;
+    flex-flow: column nowrap;
+    border-left: 2px solid lightgrey;
+    padding: 5px;
+}

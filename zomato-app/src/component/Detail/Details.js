@@ -6,7 +6,8 @@ import 'react-tabs/style/react-tabs.css';
 import './Details.css'
 import Header from '../Listing/Header'
 import Menu from './Menu'
-
+import Footer from '../Listing/Footer'
+import { Link } from 'react-router-dom';
 
 let durl = "http://localhost:8000/zomato/filterRestaurants"
 
@@ -71,7 +72,7 @@ export default class Details extends Component{
             sessionStorage.setItem("totalPrice",totalPrice)
         })
 
-
+ 
 
         
 }
@@ -79,6 +80,7 @@ export default class Details extends Component{
     render(){
     
         let {details} = this.state
+        sessionStorage.setItem("restaurant_name",details.restaurant_name)
         return(
             <div>
                 <Header/>
@@ -122,17 +124,23 @@ export default class Details extends Component{
 
                     <div className="select-section">
                         <button className="btn btn-danger">Back</button>
-                        <button className="btn btn-success" onClick={this.proceed}>Proceed</button>
+                        <Link to="/placeOrder">
+                            <button className="btn btn-success" onClick={this.proceed}>Proceed</button>
+                        </Link>
                         
                     </div>
                     <div className="menu-container">
                         <h1 className="title">{details.restaurant_name} Menus</h1>
                         
                         {/* <h2>{details.restaurant_id}</h2> */}
+                        
                         <Menu restId={this.props.location.search.split("=")[1]} FinalOrder={(data)=>{ this.addToCart(data)}}/>   
                     </div>
                     
                 </div> 
+
+                <Footer />
+
             </div>    
         )
     }

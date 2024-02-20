@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100&display=swap");
 
 .container-head {
-    height: 100px;
-    background: #ce0505 0% 0% no-repeat padding-box;
-    opacity: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 70px;
+  width: 90%;
+  position: relative;
+  left: 62px;
+  background: #eca7a7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   }
   .app-text{
     font: 45px/50px Poppins;
@@ -14,14 +17,14 @@
   }
   .logo {
     display: inline-block;
-    height: 60px;
-    width: 60px;
-    background-color: #ffffff;
-    text-align: center;
-    font:  33px/50px Poppins;
-    color: #eb2929;
-    margin: 20px;
+    height: 75px;
+    width: 75px;
+    background-color: white;
     border-radius: 50%;
+    font: 50px Poppins;
+    color: #EB2929;
+    opacity: 1;
+    justify-items: left;
   }
 
   .user-account{
@@ -29,6 +32,7 @@
     display:flex;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 30px;
   }
   .user-account > button{
     height:40px;

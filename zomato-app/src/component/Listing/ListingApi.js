@@ -9,6 +9,7 @@ import CuisineFilter from '../Filter/CuisineFilter'
 import CostFilter from '../Filter/CostFilter'
 import Sort from '../Filter/Sort'
 import {ListingData} from './ListingData'
+import Footer from './Footer'
 
 const rurl="http://localhost:8000/zomato/filterRestaurants/"
 
@@ -47,6 +48,8 @@ export default class ListingApi extends Component{
                         <ListingData listData={this.state.restaurants}/>
                     </div>
                 </div>
+
+                <Footer />
           </div>
         )
     }

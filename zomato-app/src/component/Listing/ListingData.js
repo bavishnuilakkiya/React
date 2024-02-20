@@ -20,7 +20,7 @@ export const ListingData =(props) =>{
                             <div className="top-sec">
                                 <img src={item.restaurant_thumb} alt={item.restaurant_name}/>
                                     <div className="side-sec">
-                                    <Link className="link-component"key={item._id} to ={`/details?restaurantId=${item.restaurant_id}`}>{item.restaurant_name}</Link>
+                                    <Link className="link-component" key={item._id} to ={`/details?restaurantId=${item.restaurant_id}`}>{item.restaurant_name}</Link>
                                         <h4 className="list-comment">Comment : {item. rating_text} with {item.average_rating}</h4>
                                         <p>{item.address}</p>
                                     </div>    

@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: contain;
+    position:relative;
 
 }
 
@@ -29,17 +30,7 @@
  }
 
  
- .logo{
-    display:inline-block;
-    height:100px;
-    width:100px;
-    background-color: white;
-    border-radius:50%;
-    font: 60px Poppins;
-    color: #EB2929;
-    opacity: 1;
-    justify-items: left;
- }
+ 
  .home-title{
     font: normal normal 600 25px/55px Poppins;
     letter-spacing: 0px;

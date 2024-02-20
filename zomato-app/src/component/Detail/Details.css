@@ -114,19 +114,19 @@ p{
     padding: 5px;
     border-bottom: 5px solid lightgray;
     margin:20px;
-    width:60%;
+    width: 60%;
     position: relative;
     left: 19%;
     display: flex;
     flex-flow:column nowrap;
     row-gap: 20px;
-    align-items: baseline;
+    align-items: stretch;
     
 }
 
 .menu-img{
-    height:135px;
-    width:150px;
+    height:225px;
+    width:200px;
 }
 
 .menu-section{

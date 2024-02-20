@@ -46,7 +46,7 @@ export default class Menu extends Component{
         
         if(orders){
             return orders.map((item, index) => {
-                return (<b key={index}>{item},</b>)            
+                return (<b key={index}> {item}, </b>)            
         })
         
         }
@@ -92,12 +92,15 @@ export default class Menu extends Component{
 
         return(
             <>
-                    <h2>Item Added</h2>
-                    <h4>Item Number Added =
+            
+                    <h2>Ordered list</h2>
+                    <div class="bg-info">
+                    <h4>Item Number Added <br></br>
                         {this.renderCart(this.state.orderId)}
                     </h4>
+                    </div>  
                     {this.renderMenu(this.state.menu)}
-                    
+              
                     
 
             </>

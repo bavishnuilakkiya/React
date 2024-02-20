@@ -53,18 +53,10 @@ export default class Search extends Component{
     render(){
         return(
         <div className="container-main">
-            <h2 className="app-name"> Zomato</h2>
-            <ul className="nav justify-content-end">
-            <li className="nav-item">
-                <button className="btn btn-default login"><Link to="/login">Login</Link></button>
-            </li>
-            <li className="nav-item">
-                <button className="signup btn btn-default"><Link to="/register">Create an account</Link></button>
-            </li>
-            </ul>
+            
             <div className="row text-center">
             <div className="container-fluid justify-content-center">
-                <p className="logo">e!</p>
+               
                 <h1 className="home-title">Find the best restaurants, cafés, and bars</h1>
                 <div className="search justify-content-center">
                 <select className="location" onChange={this.handleCity}>
