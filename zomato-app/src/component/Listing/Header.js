@@ -23,6 +23,8 @@ export default class Listing extends Component{
         sessionStorage.setItem("userInfo",JSON.stringify("") )
         sessionStorage.setItem("ltk","")
         this.setState({userData:""})
+
+        sessionStorage.removeItem("orderedItems")
         
 
     }

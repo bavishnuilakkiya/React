@@ -20,7 +20,7 @@ export default class Details extends Component{
             details:"",
             userItems:"",
             toalCost:0,
-            menus:""
+            menus:"",
         }
 
     }
@@ -41,13 +41,13 @@ export default class Details extends Component{
         sessionStorage.setItem("menu",this.state.userItems)
         // sessionStorage.setItem("menuList",this.state.menu)
         let menuId=sessionStorage.getItem("menu")
-        console.log("menuid is ",menuId)
+        
         let OrderId=[]
         let result;
         if(menuId){
             result=menuId.split(",").map((item)=>{
                 if(OrderId.indexOf(item)==-1){
-                OrderId.push(parseInt(item))
+                OrderId.push(item)
                 }
             })
         }
@@ -62,14 +62,20 @@ export default class Details extends Component{
         }).then((res)=> res.json())
         .then((data)=>{
             let totalPrice=0
-            console.log("menuData",data)
-            this.setState({menus:data})
-            data.map((item) =>{
-                totalPrice+=parseFloat(item.menu_price)
+            
+            // let orderedmenuId=data.menu_id
+            // let orderedmenuName=data.menu_name
+            console.log(data)
+            sessionStorage.setItem("orderedItems",JSON.stringify(data))
+            data.map((item) =>{ 
                 
+                totalPrice+=parseFloat(item.menu_price)
             } )
             console.log(totalPrice)
             sessionStorage.setItem("totalPrice",totalPrice)
+            
+            
+           
         })
 
  

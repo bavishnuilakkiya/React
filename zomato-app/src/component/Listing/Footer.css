@@ -3,10 +3,12 @@
     display:flex;
     flex-flow: column nowrap;
     border-block: 5px solid lightgrey;
+    background-color: #eca7a7;
 }
 
 h2.Footer-text{
     text-align:center;
+    color:#232e2d;
 }
 
 .footer-details{

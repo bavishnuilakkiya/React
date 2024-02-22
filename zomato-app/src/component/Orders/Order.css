@@ -1,0 +1,39 @@
+.user-container{
+    border: 4px double rgba(241, 217, 5, 0.942);
+}
+
+.user-form{
+    display:flex;
+    flex-flow:row wrap;
+    column-gap: 20px;
+
+}
+.order-container{
+    
+    width:60%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px;
+    border: 5px solid rgb(38, 62, 219);
+    padding:50px;
+}
+
+.table{
+    width:50%;
+}
+
+table,th,tr,td{
+    border: 4px double rgb(194, 192, 104)
+    
+}
+
+.table-success{
+    background-color: lightcyan;
+    align-content: baseline;
+    justify-content: center;
+}
+
+
+h2{
+    color:blue
+}

@@ -2,10 +2,7 @@
 
 .container-head {
   height: 70px;
-  width: 90%;
-  position: relative;
-  left: 62px;
-  background: #eca7a7 0% 0% no-repeat padding-box;
+  background-color: #eca7a7;
   opacity: 1;
   display: flex;
   justify-content: space-around;
@@ -13,18 +10,17 @@
   }
   .app-text{
     font: 45px/50px Poppins;
-    color:white;
+    color: #EB2929;
   }
   .logo {
     display: inline-block;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     background-color: white;
     border-radius: 50%;
-    font: 50px Poppins;
+    font: 36px Poppins;
     color: #EB2929;
     opacity: 1;
-    justify-items: left;
   }
 
   .user-account{

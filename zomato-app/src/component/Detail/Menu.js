@@ -44,12 +44,17 @@ export default class Menu extends Component{
 
     renderCart=(orders)=>{
         
+
+
         if(orders){
             return orders.map((item, index) => {
                 return (<b key={index}> {item}, </b>)            
         })
         
         }
+
+        console.log("Menu in menu",this.state.menu)
+      
         
     }
 
